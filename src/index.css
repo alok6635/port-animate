@@ -1,0 +1,108 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    background: rgb(11,26,51);
+}
+
+/* css start */
+:root{
+    --box-shadow: 5px 5px 10px 10px rgba(100,100,100,0.5);
+    --bg-color:rgb(100,100,100)
+}
+.header {
+    background:rgb(11,26,51);
+    padding: 30px 0;
+
+    a {
+        font-size: 16px;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .nav_menu {
+        display: flex;
+        justify-content: end;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+}
+.home {
+    padding-top: 120px;
+    height: 80vh;
+    .home_cover {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    .hero_data {
+        background:var(--bg-color);
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        p{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .hero_image{
+        img{
+            border-radius: 50%;
+            width: 50%;
+            margin: auto;
+            border: 5px solid gainsboro;
+            animation: superHero;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    }
+    }
+}
+
+@keyframes superHero{
+    0%{
+  border-color: blue;
+  transform: translate(0, 0px);
+  box-shadow: 20px 20px 20px 20px blue;
+    }
+    25%{
+        border-color: rgb(0, 10, 155);
+        box-shadow: 10px 10px 10px 50px rgb(0, 10, 155);
+    }
+    50%{
+        border-color: blue;
+        transform: translate(0,10px);
+        box-shadow: blue;
+    }
+    75%{
+        border-color: rgb(0, 255, 13);
+        box-shadow: rgb(0, 255, 13);;
+    }
+    100%{
+        border-color: rgb(255, 0, 43);
+        transform: translate(0, -0px);
+        box-shadow: rgb(255, 0, 43);
+    }
+
+}
+
